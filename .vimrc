@@ -19,22 +19,23 @@ set hlsearch
 set history=1000
 set cursorline
 set shortmess-=S
+set termguicolors
 
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 let mapleader = " "
-nnoremap <Leader>e :Explore<CR>
+nnoremap <silent> <Leader>e :Explore<CR>
+nnoremap <silent> <Leader>n :bnext<CR>
+nnoremap <silent> <Leader>p :bprevious<CR>
+nnoremap <silent> <Leader>d :bdelete<CR>
 
-nnoremap <PageDown>   :bnext<CR>
-nnoremap <PageUp>     :bprevious<CR>
-nnoremap <C-PageDown> :bdelete<CR>
-nnoremap <C-PageUp>   :bfirst<CR>
-
-" Clear highlighting on escape in normal mode
-nnoremap <esc> :noh<cr><esc>
-nnoremap <esc>^[ <esc>^[
+nnoremap <silent> <PageDown> :bnext<CR>
+nnoremap <silent> <PageUp> :bprevious<CR>
+nnoremap <silent> <C-PageDown> :bdelete<CR>
+nnoremap <silent> <C-PageUp> :bfirst<CR>
+nnoremap <silent> <esc> :noh<cr><esc>
 
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[1 q"
@@ -45,4 +46,3 @@ filetype indent on
 
 syntax on
 colorscheme habamax
-
