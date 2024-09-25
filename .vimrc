@@ -7,6 +7,9 @@ set mouse=a
 set clipboard=
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
+set autoindent
+set smartindent
 set expandtab
 set scrolloff=10
 set nowrap
@@ -26,7 +29,7 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 let mapleader = " "
-nnoremap <silent> <Leader>e :Explore<CR>
+nnoremap <silent> <Leader>e :Explore %:p:h<CR>
 nnoremap <silent> <Leader>n :bnext<CR>
 nnoremap <silent> <Leader>p :bprevious<CR>
 nnoremap <silent> <Leader>d :bdelete<CR>
