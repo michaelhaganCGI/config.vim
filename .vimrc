@@ -84,15 +84,4 @@
         autocmd FileType netrw setlocal bufhidden=wipe
     augroup end
 
-    " Yank maintaining cursor position
-    augroup yank_restore_cursor
-        autocmd!
-        autocmd VimEnter,CursorMoved *
-            \ let s:cursor = getpos('.')
-        autocmd TextYankPost *
-            \ if v:event.operator ==? 'y' |
-                \ call setpos('.', s:cursor) |
-            \ endif
-    augroup END
-
 "}
