@@ -38,19 +38,20 @@
     let &t_SI = "\e[5 q"
     let &t_EI = "\e[1 q"
     let g:netrw_banner = 0
-    let g:netrw_fastbrowse = 0
     let g:netrw_localcopydircmd = 'cp -r'
     filetype on
     filetype plugin on
     filetype indent on
     syntax on
     colorscheme habamax
+    hi CursorLine cterm=none
 
 "}
 
 " Keymappings {
 
     " Leader Mappings
+    nnoremap <Leader>v :windo diffthis<CR>
     nnoremap <silent> <Leader>e :Explore %:p:h<CR>
     nnoremap <silent> <Leader>n :bnext<CR>
     nnoremap <silent> <Leader>p :bprevious<CR>
@@ -61,13 +62,17 @@
     nnoremap <silent> <Leader>Q :qall!<CR>
 
     " Keyboard Mappings
+    nnoremap <silent> <esc> :noh<cr><esc>
     nnoremap <silent> <PageDown> :bnext<CR>
     nnoremap <silent> <PageUp> :bprevious<CR>
     nnoremap <silent> <C-PageDown> :bdelete<CR>
     nnoremap <silent> <C-PageUp> :bfirst<CR>
     nnoremap <silent> <Tab> :bnext<CR>
     nnoremap <silent> <S-Tab> :bprevious<CR>
-    nnoremap <silent> <esc> :noh<cr><esc>
+    noremap <C-h> <C-w>h
+    noremap <C-j> <C-w>j
+    noremap <C-k> <C-w>k
+    noremap <C-l> <C-w>l
 
 "}
 
@@ -75,8 +80,8 @@
 
     " Netrw automatic buffer deletion
     augroup netrw
-      autocmd!
-      autocmd FileType netrw setlocal bufhidden=wipe
+        autocmd!
+        autocmd FileType netrw setlocal bufhidden=wipe
     augroup end
 
     " Yank maintaining cursor position
