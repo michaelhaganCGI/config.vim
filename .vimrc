@@ -3,6 +3,7 @@
 
     " Settings
     set nocompatible
+    set encoding=utf-8
     set belloff=all
     set showcmd
     set number
@@ -23,8 +24,9 @@
     set showmode
     set showmatch
     set hlsearch
-    set history=1000
+    set history=10000
     set cursorline
+    set colorcolumn=120
     set shortmess-=S
     set autoread
     set hidden
@@ -44,7 +46,8 @@
     filetype indent on
     syntax on
     colorscheme habamax
-    hi CursorLine cterm=none
+    highlight ColorColumn ctermbg=gray
+    highlight CursorLine cterm=none
 
 "}
 
