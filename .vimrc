@@ -8,7 +8,6 @@
     set showcmd
     set number
     set relativenumber
-    set mouse=a
     set clipboard=
     set shiftwidth=4
     set tabstop=4
