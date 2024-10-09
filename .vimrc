@@ -72,6 +72,10 @@
     nnoremap <silent> <C-PageUp> :bfirst<CR>
     nnoremap <silent> <Tab> :bnext<CR>
     nnoremap <silent> <S-Tab> :bprevious<CR>
+    nnoremap n nzzzv
+    nnoremap N Nzzzv
+    nnoremap <C-d> <C-d>zz
+    nnoremap <C-u> <C-u>zz
     noremap <C-h> <C-w>h
     noremap <C-j> <C-w>j
     noremap <C-k> <C-w>k
