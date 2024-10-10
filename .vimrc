@@ -59,6 +59,8 @@
     nnoremap <silent> <Leader>p :bprevious<CR>
     nnoremap <silent> <Leader>d :bdelete<CR>
     nnoremap <silent> <Leader>D :bdelete!<CR>
+    nnoremap <silent> <Leader>y "*y
+    nnoremap <silent> <Leader>Y ^"*y$
     nnoremap <silent> <Leader>w :w<CR>
     nnoremap <silent> <Leader>q :q<CR>
     nnoremap <silent> <Leader>Q :qall!<CR>
@@ -71,14 +73,15 @@
     nnoremap <silent> <C-PageUp> :bfirst<CR>
     nnoremap <silent> <Tab> :bnext<CR>
     nnoremap <silent> <S-Tab> :bprevious<CR>
-    nnoremap n nzzzv
-    nnoremap N Nzzzv
     nnoremap <C-d> <C-d>zz
     nnoremap <C-u> <C-u>zz
     noremap <C-h> <C-w>h
     noremap <C-j> <C-w>j
     noremap <C-k> <C-w>k
     noremap <C-l> <C-w>l
+    nnoremap Y y$
+    nnoremap n nzzzv
+    nnoremap N Nzzzv
 
 "}
 
