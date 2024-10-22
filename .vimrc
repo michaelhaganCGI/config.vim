@@ -103,10 +103,10 @@
 
 " Functions {
 
+    " Quickfix list toggle with preferred settings
     function! ToggleQuickFix()
         if empty(filter(getwininfo(), 'v:val.quickfix'))
             copen
-            set colorcolumn=0
         else
             cclose
         endif
