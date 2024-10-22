@@ -66,14 +66,14 @@
     nnoremap <silent> <Leader>q :q<CR>
     nnoremap <silent> <Leader>Q :qall!<CR>
     nnoremap <silent> <Leader>c :call ToggleQuickFix()<CR>
-    nnoremap <silent> <Leader>C :cclose <CR> :cfdo bdelete<CR><CR>
+    nnoremap <silent> <Leader>C :cclose<CR>:silent cfdo bdelete<CR>
 
     " Keyboard Mappings
     nnoremap <silent> <esc> :noh<cr><esc>
     nnoremap <silent> <PageDown> :bnext<CR>
     nnoremap <silent> <PageUp> :bprevious<CR>
-    nnoremap <silent> <C-PageDown> :clast<CR>zvzz
-    nnoremap <silent> <C-PageUp> :cfirst<CR>zvzz
+    nnoremap <silent> <C-PageDown> :cfirst<CR>zvzz
+    nnoremap <silent> <C-PageUp> :clast<CR>zvzz
     nnoremap <silent> <Tab> :bnext<CR>
     nnoremap <silent> <S-Tab> :bprevious<CR>
     nnoremap <silent> <C-N> :cnext<CR>zvzz
