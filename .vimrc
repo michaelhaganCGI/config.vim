@@ -71,12 +71,12 @@
     nnoremap <silent> <esc> :noh<cr><esc>
     nnoremap <silent> <PageDown> :bnext<CR>
     nnoremap <silent> <PageUp> :bprevious<CR>
-    nnoremap <silent> <C-PageDown> :clast<CR>zzzv
-    nnoremap <silent> <C-PageUp> :cfirst<CR>zzzv
+    nnoremap <silent> <C-PageDown> :clast<CR>zvzz
+    nnoremap <silent> <C-PageUp> :cfirst<CR>zvzz
     nnoremap <silent> <Tab> :bnext<CR>
     nnoremap <silent> <S-Tab> :bprevious<CR>
-    nnoremap <silent> <C-N> :cnext<CR>zzzv
-    nnoremap <silent> <C-P> :cprevious<CR>zzzv
+    nnoremap <silent> <C-N> :cnext<CR>zvzz
+    nnoremap <silent> <C-P> :cprevious<CR>zvzz
     nnoremap <C-d> <C-d>zz
     nnoremap <C-u> <C-u>zz
     noremap <C-h> <C-w>h
@@ -86,8 +86,8 @@
     vnoremap <down> :m '>+1<CR>gv=gv
     vnoremap <up> :m '<-2<CR>gv=gv
     nnoremap Y y$
-    nnoremap n nzzzv
-    nnoremap N Nzzzv
+    nnoremap n nzvzz
+    nnoremap N Nzvzz
 
 "}
 
