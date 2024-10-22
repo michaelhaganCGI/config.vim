@@ -65,7 +65,8 @@
     nnoremap <silent> <Leader>w :w<CR>
     nnoremap <silent> <Leader>q :q<CR>
     nnoremap <silent> <Leader>Q :qall!<CR>
-    nnoremap <silent> <Leader>c :call ToggleQuickFix()<cr>
+    nnoremap <silent> <Leader>c :call ToggleQuickFix()<CR>
+    nnoremap <silent> <Leader>C :cclose <CR> :cfdo bdelete<CR><CR>
 
     " Keyboard Mappings
     nnoremap <silent> <esc> :noh<cr><esc>
