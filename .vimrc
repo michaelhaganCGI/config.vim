@@ -54,19 +54,21 @@
 " Keymappings {
 
     " Leader Mappings
-    nnoremap <Leader>v :windo diffthis<CR>
+    nnoremap <Leader>p :pwd<CR>
+    nnoremap <Leader>b :ls<CR>
+    nnoremap <Leader>v :DiffOrig<CR>
+    nnoremap <Leader>V :windo diffthis<CR>
     nnoremap <silent> <Leader>e :Explore %:p:h<CR>
-    nnoremap <silent> <Leader>n :bnext<CR>
-    nnoremap <silent> <Leader>p :bprevious<CR>
     nnoremap <silent> <Leader>d :bdelete<CR>
-    nnoremap <silent> <Leader>D :bufdo bdelete<CR>
+    nnoremap <silent> <Leader>D :bdelete!<CR>
+    nnoremap <silent> <Leader>B :bufdo bdelete<CR>
     nnoremap <silent> <Leader>y "*y
     nnoremap <silent> <Leader>Y ^"*y$
     nnoremap <silent> <Leader>w :w<CR>
     nnoremap <silent> <Leader>q :q<CR>
     nnoremap <silent> <Leader>Q :qall!<CR>
     nnoremap <silent> <Leader>c :call ToggleQuickFix()<CR>
-    nnoremap <silent> <Leader>C :cclose<CR>:silent cfdo bdelete<CR>
+    nnoremap <silent> <Leader>C :cclose<CR>:silent cfdo bdelete<CR>:silent cfirst<CR>:silent bdelete<CR>
 
     " Keyboard Mappings
     nnoremap <silent> <esc> :noh<cr><esc>
