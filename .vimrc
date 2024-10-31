@@ -88,6 +88,7 @@
     noremap <C-l> <C-w>l
     vnoremap <down> :m '>+1<CR>gv=gv
     vnoremap <up> :m '<-2<CR>gv=gv
+    vnoremap Y "*y
     nnoremap Y y$
     nnoremap n nzvzz
     nnoremap N Nzvzz
